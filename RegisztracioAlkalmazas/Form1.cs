@@ -25,9 +25,17 @@ namespace RegisztracioAlkalmazas
 
             button1.Click += (sender, e) =>
               {
-                  String text = textBox3.Text;
-                  listBox1.Items.Add(text);
-                  textBox3.Text = "";
+                  if (string.IsNullOrWhiteSpace(textBox1.Text))
+                  {
+                      MessageBox.Show("Nem írtál új hobbit");
+                  }
+                  else
+                  {
+                       String text = textBox3.Text;
+                       listBox1.Items.Add(text);
+                       textBox3.Text = "";
+                  }
+                  
               };
             
             button2.Click += (sender, e) =>
