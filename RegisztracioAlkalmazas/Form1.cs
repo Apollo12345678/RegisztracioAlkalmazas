@@ -25,7 +25,7 @@ namespace RegisztracioAlkalmazas
 
             button1.Click += (sender, e) =>
               {
-                  if (string.IsNullOrWhiteSpace(textBox1.Text))
+                  if (string.IsNullOrWhiteSpace(textBox3.Text))
                   {
                       MessageBox.Show("Nem írtál új hobbit");
                   }
